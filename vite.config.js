@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: "/reactjs"
+  base: "/reactjs/"
 })
