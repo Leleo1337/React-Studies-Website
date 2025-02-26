@@ -37,16 +37,16 @@ export default function Home(){
                     <li>I am more likely to get a job as a front end developer if I know React</li>
                 </ol>
             </section>
-            <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-12">
+            <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-20">
                 <h1 className="text-3xl text-white font-semibold text-center py-4">Course Challenges</h1>
                 <div className="flex flex-col gap-4 lg:grid lg:grid-rows-1 lg:grid-cols-3 lg:justify-items-center">
-                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300">
+                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300 rounded-xl">
                         <span>Empty</span>
                     </div>
-                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300">
+                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300 rounded-xl">
                         <span>Empty</span>
                     </div>
-                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300">
+                    <div className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300 rounded-xl">
                         <span>Empty</span>
                     </div>
                 </div>
