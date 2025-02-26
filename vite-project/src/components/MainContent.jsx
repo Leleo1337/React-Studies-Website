@@ -2,7 +2,7 @@ import React from "react"
 import '../index.css'
 import exerciseLogo from '../assets/reactLogo.png'
 
-export default function MainPage(){
+export default function MainContent(){
     return(
         <main>
             <section className='bg-gray-900 p-4'>
@@ -20,8 +20,8 @@ export default function MainPage(){
                 <img className='w-12'src={exerciseLogo} alt="React Logo" />
                 <h1 className='text-3xl text-white font-semibold'>Reasons I am excited to learn react</h1>
                 <ol className='list-decimal text-white px-10'>
-                <li className='py-2'>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
-                <li>I am more likely to get a job as a front end developer if I know React</li>
+                    <li className='py-2'>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
+                    <li>I am more likely to get a job as a front end developer if I know React</li>
                 </ol>
             </section>
         </main>
