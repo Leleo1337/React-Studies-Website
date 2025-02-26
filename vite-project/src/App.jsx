@@ -1,12 +1,12 @@
 import Header from "./components/header"
-import MainContent from "./components/MainContent"
+import Home from "./components/Home"
 import Footer from "./components/footer"
 
 function App() {
   return (
     <div>
       <Header />
-      <MainContent />
+      <Home />
       <Footer />
     </div>
   )
