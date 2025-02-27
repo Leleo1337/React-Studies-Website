@@ -9,9 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home/>} />
           <Route path="reactjs/Home" element={<Home />} />
-          <Route path="/reactjs" element={<Home />} />
-          <Route path="/reactjs/c1" element={<ChallengeOne />} />
+          <Route path="reactjs/c1" element={<ChallengeOne />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -9,7 +9,8 @@ export default function ChallengeOne(){
     return(
         <>
             <Header />  {/* Page header */}
-                <div className="container absolute top-[50%] left-[50%] translate-[-50%] w-[520px] bg-gray-800 rounded-md shadow overflow-hidden">
+            <p className="text-3xl">oi</p>
+                <div className="container absolute top-[50%] left-[50%] translate-[-50%] w-[520px] bg-gray-800 rounded-md overflow-hidden shadow-sm shadow-black">
                     <header className="flex w-full bg-c1Header h-[90px] rounded-t-md"> {/* Container header */}
                         <div className="flex justify-start items-center gap-2 ml-6 text-cyan-300">
                             <img src={react} alt="REACT " className=" w-8 "/>
