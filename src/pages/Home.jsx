@@ -1,5 +1,6 @@
-import Header from "../components/header"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
+import StaticPageCards from "../components/StaticPagesCards"
 
 import viteLogo from '../assets/img/vite.svg'
 import reactLogo from '../assets/img/reactLogo.png'
@@ -33,20 +34,14 @@ export default function Home(){
                     </section>
                     <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-20">
                         <h1 className="text-3xl text-white font-semibold text-center py-8">Course Challenges / Exercises</h1>
-                        <div className="flex flex-col gap-4 lg:grid lg:grid-rows-1 lg:grid-cols-3 lg:justify-items-center">
-                            <a href="c1" className="card-style group bg-[url(/src/assets/img/challenges/c1Blur.png)] hover:opacity-90 hover:bg-[url(/src/assets/img/Challenges/c1NoBlur.png)]">
-                                <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl">Challenge One</span>
-                            </a>                            
-                            <a href="c1" className="card-style group bg-[url(/src/assets/img/challenges/c1Blur.png)] hover:opacity-90 hover:bg-[url(/src/assets/img/Challenges/c1NoBlur.png)]">
-                                <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl">Challenge Two</span>
-                            </a>                            
-                            <a href="c1" className="card-style group bg-[url(/src/assets/img/challenges/c1Blur.png)] hover:opacity-90 hover:bg-[url(/src/assets/img/Challenges/c1NoBlur.png)]">
-                                <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl">Challenge Three</span>
-                            </a>
+
+                        <div className="border-b pb-8 border-gray-900">
+                            <h3 className="text-2xl text-white text-center pb-4 font-bold">Static pages</h3>
+                            <StaticPageCards/>
                         </div>
                     </section>
                 </main>
-            <Footer />
+                <Footer />
         </>
     )
 }
