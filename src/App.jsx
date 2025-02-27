@@ -7,11 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/reactjs">
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="reactjs/Home" element={<Home />} />
-          <Route path="reactjs/c1" element={<ChallengeOne />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="c1" element={<ChallengeOne />} />
         </Routes>
       </BrowserRouter>
     </>

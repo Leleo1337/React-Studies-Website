@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Gemstones&display=swap');
 @import "tailwindcss";
 
-
-
 @theme{
     /* Challenge 1 colors & font */
     --color-c1Main: #282D35;
@@ -11,4 +9,6 @@
 
 }
 
-
+.card-style{
+    @apply relative w-full lg:w-[80%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
+}
