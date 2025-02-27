@@ -1,9 +1,9 @@
 import Header from "../components/header"
 import Footer from "../components/Footer"
 
-import viteLogo from '../assets/vite.svg'
-import reactLogo from '../assets/reactLogo.png'
-import tailwindLogo from '../assets/tailwindLogo.png'
+import viteLogo from '../assets/img/vite.svg'
+import reactLogo from '../assets/img/reactLogo.png'
+import tailwindLogo from '../assets/img/tailwindLogo.png'
 
 
 export default function Home(){
@@ -42,7 +42,7 @@ export default function Home(){
                         </ol>
                     </section>
                     <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-20">
-                        <h1 className="text-3xl text-white font-semibold text-center py-4">Course Challenges</h1>
+                        <h1 className="text-3xl text-white font-semibold text-center py-8">Course Challenges / Exercises</h1>
                         <div className="flex flex-col gap-4 lg:grid lg:grid-rows-1 lg:grid-cols-3 lg:justify-items-center">
                             <a href="c1" className="w-full lg:w-[80%] flex items-center justify-center h-40 bg-gray-300 hover:bg-gray-400 rounded-xl cursor-pointer">
                                 <span>Empty</span>
