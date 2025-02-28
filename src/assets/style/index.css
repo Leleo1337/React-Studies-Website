@@ -1,13 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Gemstones&display=swap');
 @import "tailwindcss";
 
-@theme{
+@layer base{
+    body,html{
+        @apply min-h-screen overflow-auto
+    }
+
+    body{
+        @apply bg-c1Main pt-18
+    }
+
+}
+
+@layer components{
+    .card-style{
+        @apply relative w-full lg:w-[85%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
+    }
+}
+
+@layer utilities {
+    ::-webkit-scrollbar {
+        @apply w-2; /* Barra fina */
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-c1Header;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-full bg-gray-700 shadow-md transition-colors ease-in
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-600;
+    }
+}
+
+@theme challengeOne{
     /* Challenge 1 colors & font */
     --color-c1Main: #282D35;
     --color-c1Header: #21222A;
     --font-inter: "Inter", sans-serif;
-}
-
-.card-style{
-    @apply relative w-full lg:w-[85%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
 }
