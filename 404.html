@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        var path = window.location.pathname.replace(/^\/reactjs/, '');
-        window.location.replace("/reactjs" + path);
+        // Obtém a URL sem o domínio
+        var path = window.location.pathname;
+
+        // Adiciona o basename manualmente
+        var newUrl = "/reactjs" + path;
+
+        // Evita loops de redirecionamento
+        if (window.location.pathname !== newUrl) {
+            window.location.replace(newUrl);
+        }
     </script>
 </head>
 <body>
