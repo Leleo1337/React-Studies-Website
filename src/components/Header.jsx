@@ -12,9 +12,6 @@ export default function Header(){
                     <li className="underline text-gray-400 hover:text-white"><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div className="absolute top-0 w-full h-[72px] -z-20">
-                Teste
-            </div>
         </header>
     )
 }

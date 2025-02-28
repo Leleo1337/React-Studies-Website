@@ -12,19 +12,16 @@ export default function Home(){
         <>
             <Header />
                 <main>
-                    <section className="bg-gray-900 pt-24 pb-2">
+                    <section className='bg-gray-900 pt-24 pb-8 px-4 text-center'>
                         <div className="flex gap-3 items-center justify-center ">
                             <img className="w-10" src={viteLogo} alt="TailWindCSS Logo" />
                             <img className='w-12'src={reactLogo} alt="React Logo" />
                             <img className="w-12" src={tailwindLogo} alt="TailWindCSS Logo" />
                         </div>
-                    </section>
-                    <section className='bg-gray-900 pt-2 pb-8 px-4 text-center'>
                         <h1 className='text-white text-5xl text-center py-4 font-semibold'>About this project</h1>
                         <p className="text-white">I'm building this website to learn react and enhance my skills in Tailwind CSS, HTML and JavaScript, following the
                         <span className="underline text-blue-300"><a href="https://scrimba.com/learn-react-c0e" target="_blank"> "Learn React" course on Scrimba</a> </span>, this website is made to apply what I've learned in the lessons.</p>
                     </section>
-
                     <section className='bg-gray-900 p-2 py-8'>
                         <h2 className='text-4xl text-white font-semibold px-2.5 text-center'>Reasons I am excited to learn react <span><img className='w-8 mb-1.5 inline'src={reactLogo} alt="React Logo" /></span> </h2>
                         <ol className='text-white md:list-decimal md:w-120 md:m-auto pt-2'>
