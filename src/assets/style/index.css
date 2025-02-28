@@ -9,5 +9,5 @@
 }
 
 .card-style{
-    @apply relative w-full lg:w-[80%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
+    @apply relative w-full lg:w-[85%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
 }

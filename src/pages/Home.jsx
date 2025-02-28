@@ -33,10 +33,10 @@ export default function Home(){
                         </ol>
                     </section>
                     <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-20">
-                        <h1 className="text-3xl text-white font-semibold text-center py-8">Course Challenges / Exercises</h1>
+                        <h1 className="text-3xl text-white font-semibold text-center py-8">Course Exercises / Challenges</h1>
 
                         <div className="border-b pb-8 border-gray-900">
-                            <h3 className="text-2xl text-white text-center pb-4 font-bold">Static pages</h3>
+                            <h3 className="text-2xl text-white text-center pb-8 font-bold">Static pages</h3>
                             <StaticPageCards/>
                         </div>
                     </section>
