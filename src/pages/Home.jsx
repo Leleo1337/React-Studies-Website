@@ -40,18 +40,21 @@ export default function Home(){
                                 name="Challenge 1 /ReactFacts"
                                 img="src\assets\img\challenges\HomePage\c1Blur.png"
                                 hoverImg="src\assets\img\challenges\HomePage\c1NoBlur.png"
+                                path="c1"
                             />
                             <StaticPageCard
                                 title="Data driven React"
                                 name="Challenge 1 / Contracts"
                                 img="src\assets\img\challenges\HomePage\c2Blur.png"
                                 hoverImg="src\assets\img\challenges\HomePage\c2NoBlur.png"
+                                path="c2"
                             />
                             <StaticPageCard
                                 title="TITLE"
                                 name="Empty"
                                 img="src"
                                 hoverImg="src"
+                                path=""
                             />
                         </div>
                     </div>

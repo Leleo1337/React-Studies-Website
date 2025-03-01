@@ -9,7 +9,7 @@ export default function StaticPageCards(props){
     return(
             <div className='w-full text-white text-center text-3xl font-semibold pb-8'>
                 <h3 className='pb-2.5 text-2xl'>{props.title}</h3>
-            <Link to="c1" className='card-style mx-auto shadow' 
+            <Link to={props.path} className='card-style mx-auto shadow' 
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)} >
                 <img src={isHovered ? props.hoverImg : props.img } alt="Challenge preview" className='w-full rounded-xl opacity-40 hover:opacity-60'/> 
