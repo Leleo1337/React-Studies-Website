@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'; // Adicione esta importação
 import { useState } from 'react';
 
-import cardShadow from '../assets/img/card-shadow.png'
+import cardShadow from '../assets/card-shadow.png'
 
 export default function StaticPageCards(props){
     const [ isHovered, setIsHovered ] = useState(false)

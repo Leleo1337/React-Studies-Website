@@ -1,8 +1,8 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 
-import reactLogo from '../../assets/img/reactLogo.png'
-import reactBg from '../../assets/img/reactC1Bg.svg'
+import reactLogo from '../../assets/reactLogo.png'
+import reactBg from '../../assets/reactC1Bg.svg'
 
 export default function ChallengeOne(){
     return(

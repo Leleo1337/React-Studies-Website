@@ -1,7 +1,7 @@
-import whiskersonImg from '../../assets/img/challenges/c2/mr-whiskerson.png'
-import fluffykinsImg from '../../assets/img/challenges/c2/fluffykins.png'
-import felixImg from '../../assets/img/challenges/c2/felix.png'
-import pumpkinImg from '../../assets/img/challenges/c2/pumpkin.png'
+import whiskersonImg from '../../assets/challenges/c2/mr-whiskerson.png'
+import fluffykinsImg from '../../assets/challenges/c2/fluffykins.png'
+import felixImg from '../../assets/challenges/c2/felix.png'
+import pumpkinImg from '../../assets/challenges/c2/pumpkin.png'
 
 
 import Header from '../../components/Header'

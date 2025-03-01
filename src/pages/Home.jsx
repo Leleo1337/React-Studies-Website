@@ -2,9 +2,15 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 import StaticPageCard from "../components/StaticPagesNavigation"
 
-import viteLogo from '../assets/img/vite.svg'
-import reactLogo from '../assets/img/reactLogo.png'
-import tailwindLogo from '../assets/img/tailwindLogo.png'
+import viteLogo from '../assets/vite.svg'
+import reactLogo from '../assets/reactLogo.png'
+import tailwindLogo from '../assets/tailwindLogo.png'
+
+
+import c1Blur from "../assets/challenges/HomePage/c1Blur.png"
+import c1NoBlur from "../assets/challenges/HomePage/c1NoBlur.png"
+import c2Blur from "../assets/challenges/HomePage/c2Blur.png"
+import c2NoBlur from "../assets/challenges/HomePage/c2NoBlur.png"
 
 
 
@@ -38,15 +44,15 @@ export default function Home(){
                             <StaticPageCard
                                 title="Static page"
                                 name="Challenge 1 /ReactFacts"
-                                img="src\assets\img\challenges\HomePage\c1Blur.png"
-                                hoverImg="src\assets\img\challenges\HomePage\c1NoBlur.png"
+                                img={c1Blur}
+                                hoverImg={c1NoBlur}
                                 path="c1"
                             />
                             <StaticPageCard
                                 title="Data driven React"
                                 name="Challenge 1 / Contracts"
-                                img="src\assets\img\challenges\HomePage\c2Blur.png"
-                                hoverImg="src\assets\img\challenges\HomePage\c2NoBlur.png"
+                                img={c2Blur}
+                                hoverImg={c2NoBlur}
                                 path="c2"
                             />
                             <StaticPageCard
