@@ -1,3 +1,5 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer';
 import StaticPageCards from "../components/StaticPagesCards"
 
 import viteLogo from '../assets/img/vite.svg'
@@ -5,9 +7,11 @@ import reactLogo from '../assets/img/reactLogo.png'
 import tailwindLogo from '../assets/img/tailwindLogo.png'
 
 
+
 export default function Home(){
     return(
-        <>            
+        <>
+            <Header />
             <main>
                 <section className='bg-gray-900 pt-8 pb-8 px-4 text-center'>
                     <div className="flex gap-3 items-center justify-center ">
@@ -35,6 +39,7 @@ export default function Home(){
                     </div>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }
