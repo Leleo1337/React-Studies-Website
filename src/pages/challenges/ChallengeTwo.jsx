@@ -1,3 +1,8 @@
+import whiskersonImg from '../../assets/img/challenges/c2/mr-whiskerson.png'
+import fluffykinsImg from '../../assets/img/challenges/c2/fluffykins.png'
+import felixImg from '../../assets/img/challenges/c2/felix.png'
+import pumpkinImg from '../../assets/img/challenges/c2/pumpkin.png'
+
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
@@ -12,25 +17,25 @@ export default function ChallengeTwo(){
             <Header />
             <div className="flex flex-wrap gap-6 max-w-[600px] justify-center mx-auto pt-8 pb-16">
                 <Contacts
-                    img="src/assets/img/challenges/c2/mr-whiskerson.png"
+                    img={whiskersonImg}
                     name="Mr. Whiskerson"
                     phone="(212) 555-1234"
                     email="mr.whiskaz@catnap.meow"
                 />
                 <Contacts 
-                    img="src/assets/img/challenges/c2/fluffykins.png"
+                    img={fluffykinsImg}
                     name="Fluffykins"
                     phone="(212) 555-2345"
                     email="fluff@me.com"
                 />
                 <Contacts 
-                    img="src/assets/img/challenges/c2/felix.png"
+                    img={felixImg}
                     name="Felix"
                     phone=" (212) 555-4567"
                     email="thecat@hotmail.com"
                 />
                 <Contacts 
-                    img="src/assets/img/challenges/c2/pumpkin.png"
+                    img={pumpkinImg}
                     name="Pumpkin"
                     phone="(0800) CAT KING"
                     email="pumpkin@scrimba.com"
