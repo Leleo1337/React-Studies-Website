@@ -41,7 +41,7 @@ export default function ChallengeTwo(){
                     email="pumpkin@scrimba.com"
                 />
             </div>
-            <p className="font-semibold text-center pb-12">This page <span className="font-bold">IS</span> responsive</p>
+            <p className="pb-12 font-semibold text-center">This page <span className="font-bold">IS</span> responsive</p>
             <Footer />
 
         </>
