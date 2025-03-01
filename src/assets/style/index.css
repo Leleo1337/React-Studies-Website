@@ -16,7 +16,7 @@
 
 @layer components{
     .card-style{
-        @apply relative w-full lg:w-[85%] flex items-center justify-center h-72 rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-300 hover:mix-blend-screen transition ease-in
+        @apply relative w-full h-54 lg:w-[85%] lg:h-71.5 flex items-center justify-center rounded-xl cursor-pointer hover:scale-102 hover:bg-gray-700 transition ease-in
     }
 }
 

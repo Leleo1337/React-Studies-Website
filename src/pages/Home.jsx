@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import StaticPageCards from "../components/StaticPagesNavigation"
+import StaticPageCard from "../components/StaticPagesNavigation"
 
 import viteLogo from '../assets/img/vite.svg'
 import reactLogo from '../assets/img/reactLogo.png'
@@ -31,11 +31,29 @@ export default function Home(){
                     </ol>
                 </section>
                 <section className="w-full bg-gray-950 m-auto px-2 pt-4 pb-20">
-                    <h1 className="text-3xl text-white font-semibold text-center py-8">Course Exercises / Challenges</h1>
+                    <h1 className="text-3xl text-white font-bold text-center py-8">Course Exercises / Challenges</h1>
 
                     <div className="border-b pb-8 border-gray-900">
-                        <h3 className="text-2xl text-white text-center pb-8 font-bold">Static pages</h3>
-                        <StaticPageCards/>
+                        <div className="flex flex-col gap-4 lg:grid lg:grid-rows-1 lg:grid-cols-3 lg:justify-items-center px-12">
+                            <StaticPageCard
+                                title="Static page"
+                                name="Challenge 1 /ReactFacts"
+                                img="src\assets\img\challenges\HomePage\c1Blur.png"
+                                hoverImg="src\assets\img\challenges\HomePage\c1NoBlur.png"
+                            />
+                            <StaticPageCard
+                                title="Data driven React"
+                                name="Challenge 1 / Contracts"
+                                img="src\assets\img\challenges\HomePage\c2Blur.png"
+                                hoverImg="src\assets\img\challenges\HomePage\c2NoBlur.png"
+                            />
+                            <StaticPageCard
+                                title="TITLE"
+                                name="Empty"
+                                img="src"
+                                hoverImg="src"
+                            />
+                        </div>
                     </div>
                 </section>
             </main>
