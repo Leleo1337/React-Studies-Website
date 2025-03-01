@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const segmentCount = window.location.pathname.split('/').length - 1;
+      sessionStorage.redirect = segmentCount > 1 ? '../'.repeat(segmentCount) + 'index.html' : 'index.html';
+      window.location.replace(sessionStorage.redirect || 'index.html');
+    </script>
+  </head>
+</html>
