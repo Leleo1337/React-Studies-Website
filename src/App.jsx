@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter basename="/reactjs">
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="Home" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/c1" element={<ChallengeOne />}/>
           <Route path="/c2" element={<ChallengeTwo />}/>
           <Route path="/c3" element={<ChallengeOne />}/>

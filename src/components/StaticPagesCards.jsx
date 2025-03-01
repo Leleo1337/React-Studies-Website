@@ -12,9 +12,9 @@ export default function StaticPageCards(){
                     <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl font-semibold z-10">Challenge Two / Contacts</span>
                     <img src={cardShadow} alt="image shadow" className="absolute bottom-0 h-20 z-1 rounded-b-xl" />
                 </a>
-                <a href="c1" className="card-style group bg-[url(/src/assets/img/challenges/c3/c3Blur.png)] opacity-50 hover:opacity-70 hover:bg-[url(/src/assets/img/challenges/c3/c3NoBlur.png)]">
+                <a href="c2" className="card-style group bg-[url(/src/assets/img/challenges/c2/HomePage/c2blur.png)] opacity-50 hover:opacity-70 hover:bg-[url(/src/assets/img/challenges/c2/HomePage/c2NoBlur.png)]">
                     <img src={cardShadow}alt="image shadow" className="absolute bottom-0 h-20 z-1 rounded-b-xl" />
-                    <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl font-semibold z-10">Challenge Three</span>
+                    <span className="group-hover:underline absolute bottom-6 left-5 text-white text-2xl font-semibold z-10">Challenge Three / empty</span>
                 </a>   
             </div>
         </>
