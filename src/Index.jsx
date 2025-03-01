@@ -27,9 +27,11 @@ const router = createBrowserRouter([
     path: "/c2",
     element: <ChallengeTwo />
   },
-])
-
-
+],
+  {
+    basename: "/reactjs" // Basename deve estar aqui como opção do router
+  }
+)
 
 root.render(
   <StrictMode>

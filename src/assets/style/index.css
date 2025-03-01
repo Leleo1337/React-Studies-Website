@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Gemstones&display=swap');
 @import "tailwindcss";
 
+
+
+
 @layer base{
     body,html{
-        @apply min-h-screen overflow-auto
+        @apply min-h-screen 
     }
 
     body{
-        @apply bg-c1Main pt-18
+        @apply bg-c1Main pt-18 overflow-y-scroll
     }
-
 }
 
 @layer components{
@@ -20,7 +22,7 @@
 
 @layer utilities {
     ::-webkit-scrollbar {
-        @apply w-2; /* Barra fina */
+        @apply w-2;
     }
     ::-webkit-scrollbar-track {
         @apply bg-c1Header;
@@ -39,5 +41,6 @@
     /* Challenge 1 colors & font */
     --color-c1Main: #282D35;
     --color-c1Header: #21222A;
+    
     --font-inter: "Inter", sans-serif;
 }

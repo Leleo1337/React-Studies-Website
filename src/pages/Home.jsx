@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import StaticPageCards from "../components/StaticPagesCards"
+import StaticPageCards from "../components/StaticPagesNavigation"
 
 import viteLogo from '../assets/img/vite.svg'
 import reactLogo from '../assets/img/reactLogo.png'
