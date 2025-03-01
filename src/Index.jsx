@@ -29,7 +29,7 @@ const router = createBrowserRouter([
   },
 ],
   {
-    basename: "/reactjs" // Basename deve estar aqui como opção do router
+    basename: "/reactjs/"
   }
 )
 
