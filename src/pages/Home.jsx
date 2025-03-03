@@ -25,14 +25,13 @@ export default function Home(){
                 </section>
                 <section className='p-2 py-8 bg-gray-900'>
                     <h2 className='text-4xl text-white font-semibold px-2.5 text-center'>Reasons I am excited to learn react <span><img className='w-8 mb-1.5 inline'src={reactLogo} alt="React Logo" /></span> </h2>
-                    <ol className='pt-2 text-white md:list-decimal md:w-120 md:m-auto'>
+                    <ol className='pt-2 mx-8 text-white list-decimal md:w-120 md:m-auto'>
                         <li className='py-2'>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
                         <li>I am more likely to get a job as a front end developer if I know React</li>
                     </ol>
                 </section>
                 <section className="w-full px-2 pt-4 pb-20 m-auto bg-gray-950">
                     <h1 className="py-8 text-3xl font-bold text-center text-white">Course Exercises / Challenges</h1>
-
                     <div className="pb-8 border-b border-gray-900">
                         <div className="flex flex-col gap-4 px-4 sm:grid sm:grid-rows-1 sm: sm:grid-cols-2 sm:justify-items-center lg:grid-cols-3 lg:justify-items-center">
                             <StaticPageCard
