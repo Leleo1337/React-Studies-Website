@@ -10,7 +10,7 @@
     }
 
     body{
-        @apply bg-c1Main pt-18 overflow-y-scroll
+        @apply bg-MainBg pt-18 overflow-y-scroll
     }
 }
 
@@ -37,9 +37,12 @@
     }
 }
 
+@theme globals{
+    --color-MainBg: #282D35;
+}
+
 @theme challengeOne{
     /* Challenge 1 colors & font */
-    --color-c1Main: #282D35;
     --color-c1Header: #21222A;
     
     --font-inter: "Inter", sans-serif;
