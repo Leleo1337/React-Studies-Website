@@ -7,7 +7,7 @@ import pumpkinImg from '../../assets/challenges/c2/pumpkin.png'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 
-import Contacts from '../../components/challenges/c2/Contact';
+import Contacts from '../../components/challenges/Contact';
 
 export default function ChallengeTwo(){
     document.body.classList.add('bg-gray-100');
