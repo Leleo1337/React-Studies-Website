@@ -2,17 +2,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 import StaticPageCard from "../components/StaticPagesNavigation"
 
+import challengeHomeImages from '../assets/challenges/HomePage/challengesImages.js'
+
 import viteLogo from '../assets/vite.svg'
 import reactLogo from '../assets/reactLogo.png'
 import tailwindLogo from '../assets/tailwindLogo.png'
-
-
-import c1Blur from "../assets/challenges/HomePage/c1Blur.png"
-import c1NoBlur from "../assets/challenges/HomePage/c1NoBlur.png"
-import c2Blur from "../assets/challenges/HomePage/c2Blur.png"
-import c2NoBlur from "../assets/challenges/HomePage/c2NoBlur.png"
-
-
 
 export default function Home(){
     return(
@@ -40,27 +34,34 @@ export default function Home(){
                     <h1 className="py-8 text-3xl font-bold text-center text-white">Course Exercises / Challenges</h1>
 
                     <div className="pb-8 border-b border-gray-900">
-                        <div className="flex flex-col gap-4 px-12 lg:grid lg:grid-rows-1 lg:grid-cols-3 lg:justify-items-center">
+                        <div className="flex flex-col gap-4 px-4 sm:grid sm:grid-rows-1 sm: sm:grid-cols-2 sm:justify-items-center lg:grid-cols-3 lg:justify-items-center">
                             <StaticPageCard
                                 title="Static page"
                                 name="Challenge 1 /ReactFacts"
-                                img={c1Blur}
-                                hoverImg={c1NoBlur}
+                                img={challengeHomeImages.c1.blur}
+                                hoverImg={challengeHomeImages.c1.noBlur}
                                 path="c1"
                             />
                             <StaticPageCard
                                 title="Data driven React"
                                 name="Challenge 1 / Contracts"
-                                img={c2Blur}
-                                hoverImg={c2NoBlur}
+                                img={challengeHomeImages.c2.blur}
+                                hoverImg={challengeHomeImages.c2.noBlur}
                                 path="c2"
                             />
                             <StaticPageCard
-                                title="TITLE"
+                                title="Props pratice"
+                                name="Challenge 3 / Jokes"
+                                img={challengeHomeImages.c3.blur}
+                                hoverImg={challengeHomeImages.c3.noBlur}
+                                path="c3"
+                            />
+                                <StaticPageCard
+                                title="Empty"
                                 name="Empty"
-                                img="src"
-                                hoverImg="src"
-                                path=""
+                                img={challengeHomeImages.c4.blur}
+                                hoverImg={challengeHomeImages.c4.noBlur}
+                                path="c4"
                             />
                         </div>
                     </div>
