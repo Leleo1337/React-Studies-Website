@@ -11,22 +11,42 @@ export default function ChallengeThree(){
                     <Joke
                         setup="What's the best thing about Switzerland?"
                         punchline="I don't know, but the flag is a big plus!"
+                        upvotes={8}
+                        downvotes={3}
+                        comments={['good one', 'kkkkk', 'hahahaha']}
+                        isPun={true}
                     />
                     <Joke 
                         setup="I got my daughter a fridge for her birthday." 
                         punchline="I can't wait to see her face light up when she opens it."
+                        upvotes={13}
+                        downvotes={6}
+                        comments={['good one', 'kkkkk', 'hahahaha']}
+                        isPun={true}
                     />
                     <Joke 
                         setup="How did the hacker escape the police?" 
                         punchline="He just ransomware!"
+                        upvotes={4}
+                        downvotes={6}
+                        comments={['good one', 'kkkkk', 'hahahaha']}
+                        isPun={true}
                     />
                     <Joke 
                         setup="Why don't pirates travel on mountain roads?" 
                         punchline="Scurvy."
+                        upvotes={2}
+                        downvotes={12}
+                        comments={['good one', 'kkkkk', 'hahahaha']}
+                        isPun={false}
                     />
                     <Joke 
                         setup="Why do bees stay in the hive in the winter?" 
                         punchline="Swarm."
+                        upvotes={8}
+                        downvotes={8}
+                        comments={['good one', 'kkkkk', 'hahahaha']}
+                        isPun={true}
                     />
                 </div>
             </main>
