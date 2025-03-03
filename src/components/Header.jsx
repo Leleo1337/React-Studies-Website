@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'; // Adicione esta importação
+import { Link } from 'react-router-dom'; // react router navigation tag
 const leleo1337 = 'https://avatars.githubusercontent.com/u/168025120?v=4'
 
 export default function NavBar(){
