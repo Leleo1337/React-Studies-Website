@@ -9,6 +9,11 @@ import reactLogo from '../assets/reactLogo.png'
 import tailwindLogo from '../assets/tailwindLogo.png'
 
 export default function Home(){
+    // gambiarra :p
+    
+    document.body.classList.remove('bg-gray-100')
+    document.body.classList.add('bg-gray-900')
+    
     return(
         <>
             <Header />
