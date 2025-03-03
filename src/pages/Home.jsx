@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import StaticPageCard from "../components/StaticPagesNavigation"
+import ChallengeCard from "../components/ChallengesNavigation.jsx"
 
 import challengeHomeImages from '../assets/challenges/HomePage/challengesImages.js'
 
@@ -12,7 +12,7 @@ export default function Home(){
     // gambiarra :p
     
     document.body.classList.remove('bg-gray-100')
-    document.body.classList.add('bg-gray-900')
+    document.body.classList.add('bg-mainBg')
     
     return(
         <>
@@ -39,33 +39,41 @@ export default function Home(){
                     <h1 className="py-8 text-3xl font-bold text-center text-white">Course Exercises / Challenges</h1>
                     <div className="pb-8 border-b border-gray-900">
                         <div className="flex flex-col gap-4 px-4 sm:grid sm:grid-rows-1 sm: sm:grid-cols-2 sm:justify-items-center lg:grid-cols-3 lg:justify-items-center">
-                            <StaticPageCard
+                            <ChallengeCard
                                 title="Static page"
                                 name="Challenge 1 /ReactFacts"
                                 img={challengeHomeImages.c1.blur}
                                 hoverImg={challengeHomeImages.c1.noBlur}
                                 path="c1"
                             />
-                            <StaticPageCard
+                            <ChallengeCard
                                 title="Data driven React"
                                 name="Challenge 1 / Contracts"
                                 img={challengeHomeImages.c2.blur}
                                 hoverImg={challengeHomeImages.c2.noBlur}
                                 path="c2"
                             />
-                            <StaticPageCard
+                            <ChallengeCard
                                 title="Props pratice"
                                 name="Challenge 3 / Jokes"
                                 img={challengeHomeImages.c3.blur}
                                 hoverImg={challengeHomeImages.c3.noBlur}
                                 path="c3"
                             />
-                                <StaticPageCard
-                                title="Empty"
-                                name="Empty"
+                            <ChallengeCard
+                                title="Pass props to Entry Component"
+                                name="Challenge 4 / Travel Journal"
                                 img={challengeHomeImages.c4.blur}
                                 hoverImg={challengeHomeImages.c4.noBlur}
                                 path="c4"
+                            />
+
+                            <ChallengeCard
+                                title="Empty"
+                                name="Empty"
+                                img={challengeHomeImages.c5.blur}
+                                hoverImg={challengeHomeImages.c5.noBlur}
+                                path="c5"
                             />
                         </div>
                     </div>
