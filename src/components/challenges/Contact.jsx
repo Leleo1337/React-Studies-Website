@@ -1,5 +1,5 @@
 export default function Contacts(props){
-    const {name,email,img} = props 
+    const {name,email} = props 
     //deconstruct
     console.log(name,email)
     console.log(props)
