@@ -7,6 +7,7 @@ import './index.css'
 import Home from './pages/Home.jsx'
 import ChallengeOne from './pages/challenges/Challengeone.jsx'
 import ChallengeTwo from './pages/challenges/ChallengeTwo.jsx'
+import ChallengeThree from './pages/challenges/ChallengeThree.jsx'
 
 const root = createRoot(document.querySelector('#root'))
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     path: "/c2",
     element: <ChallengeTwo />
   },
+  {
+    path: "/c3",
+    element: <ChallengeThree />
+  }
 ],
   {
     basename: "/reactjs/"
@@ -36,6 +41,5 @@ const router = createBrowserRouter([
 root.render(
   <StrictMode>
   <RouterProvider router={router} />
-  
   </StrictMode>,
 )
