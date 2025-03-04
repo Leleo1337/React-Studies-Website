@@ -15,17 +15,7 @@ export default function ChallengeFour(){
     const Journals = journalData.map(data => {
         return <Component
          key={data.id}
-         img={
-            {
-                src: data.img.src,
-                alt: data.img.alt
-            }
-         }
-         location={data.location}
-         maplink={data.googleMapsLink} 
-         title={data.title}
-         date={data.dates}
-         text={data.text}
+         contentData={data}
          />
     })
 
