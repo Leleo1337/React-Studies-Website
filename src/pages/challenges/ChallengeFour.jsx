@@ -26,7 +26,7 @@ export default function ChallengeFour(){
                 <main className='px-6 py-4 mx-auto mb-20 bg-white md:container md:max-w-[900px] rounded-b-md shadow-xl'>
                     <div className=''>
                         <Component 
-                            img={fuuji}
+                            img={{src: fuuji, alt: "Mount fuji"}}
                             country="Japan"
                             mapLink="#"
                             location="Mount Fuji"
@@ -35,7 +35,7 @@ export default function ChallengeFour(){
                                 Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
                         />
                         <Component 
-                            img={sydney}
+                            img={{src: sydney, alt: "Sydney"}}
                             country="Australia"
                             link="#"
                             location="Sydney Opera House"
@@ -44,7 +44,7 @@ export default function ChallengeFour(){
                                 Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
                         />
                         <Component 
-                            img={Geirangerfjord}
+                            img={{src: sydney, alt: "Sydney"}}
                             country="Geirangerfjord"
                             link="#"
                             location="Sydney Opera House"

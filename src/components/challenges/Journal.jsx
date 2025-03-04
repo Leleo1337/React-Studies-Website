@@ -5,7 +5,7 @@ export default function Component(props){
         <>  
             <div className='border-b border-gray-400 '>
                 <div className='flex flex-col md:gap-4 pt-4 md:flex-row'>
-                    <div style={{ backgroundImage: `url(${props.img})` }} className='w-full h-46 sm:h-60 md:h-40 mb-4 bg-center bg-cover md:w-36 rounded-md shrink-0 shadow-sm'></div>
+                    <div title={props.img.alt} style={{ backgroundImage: `url(${props.img.src})` }} className='w-full h-46 sm:h-60 md:h-40 mb-4 bg-center bg-cover md:w-36 rounded-md shrink-0 shadow-sm'></div>
                     <div className='flex flex-col pt-1'>
                         <div className='flex items-center justify-between md:justify-start md:gap-3'>
                             <div className='flex items-center gap-1'>
