@@ -13,7 +13,7 @@ import ChallengeFour from './pages/challenges/ChallengeFour.jsx';
 const root = createRoot(document.querySelector('#root'))
 root.render(
   <StrictMode>
-    <BrowserRouter basename='/reactjs'>
+    <BrowserRouter basename='/reactjs/'>
       <ScrollToTop />
         <Routes>
             <Route path="/" element={<Home />} />
