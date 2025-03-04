@@ -7,15 +7,16 @@ export default function ChallengeCard(props){
     const [ isHovered, setIsHovered ] = useState(false)
 
     return(
-            <div className='pb-8 text-3xl font-semibold text-center text-white sm:w-full'>
-                <h3 className='pb-2.5 text-2xl'>{props.title}</h3>
-            <Link to={props.path} className='mx-auto shadow h-50 sm:h-75 opacity-55 hover:opacity-80 card-style' style={{ backgroundImage: `url(${isHovered ? props.hoverImg : props.img})` }}
-                onMouseEnter={() => setIsHovered(true)} 
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                <span className="absolute text-lg font-semibold hover:underline bottom-4 left-5 text-gray-50 z-1">{props.name}</span>
-                <img src={cardShadow} alt="image shadow" className="absolute bottom-0 left-0 z-0 h-20 rounded-b-xl" />
-            </Link>
+        <div className='items-center w-full h-75 bg-gradient-to-br from-gray-950 via-gray-800 to-gray-600 rounded-md'>
+            <div className='w-full h-43 hover:h-48 overflow-hidden rounded-t-sm bg-left-top transition-all ease-in duration-200' >
+                <Link to={props.data.path} className='overflow-hidden opacity-75 hover:blur-sm'>
+                    <div className='w-full h-full transition ease-in duration-200 hover:scale-103' style={{ backgroundImage: `url(${props.data.img})`}}></div>
+                </Link>
             </div>
+            <div className='h-32 p-1'>
+                <h1 className='text-center text-white font-semibold text-xl'>{props.data.title}</h1>
+                <p className='text-white break-words pt-4 ml-4'>{props.data.summary}</p>
+            </div>
+        </div>
     )
 }
