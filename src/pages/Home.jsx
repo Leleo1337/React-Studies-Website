@@ -61,7 +61,7 @@ export default function Home(){
                                 path="c3"
                             />
                             <ChallengeCard
-                                title="Pass props to Entry Component"
+                                title="Map Entry components"
                                 name="Challenge 4 / Travel Journal"
                                 img={challengeHomeImages.c4.blur}
                                 hoverImg={challengeHomeImages.c4.noBlur}

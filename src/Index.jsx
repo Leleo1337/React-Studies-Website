@@ -10,6 +10,6 @@ const root = createRoot(document.querySelector('#root'))
 
 root.render(
   <StrictMode>
-    <RouterProvider router={BrowserRoutes} />
+      <RouterProvider router={BrowserRoutes} />
   </StrictMode>,
 )
