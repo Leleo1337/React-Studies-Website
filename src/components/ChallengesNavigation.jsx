@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'; // navegação SPA
 import { useState } from 'react';
 
-export default function ChallengeCard(props){
     const [ isHovered, setIsHovered ] = useState(false)
 
     return(
