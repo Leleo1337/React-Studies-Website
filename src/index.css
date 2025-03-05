@@ -46,3 +46,11 @@
 
     --blur-sm: 3px;
 }
+
+@theme challengeFive{
+    --color-c5Background: #E8E8E8;
+    --color-c5Main: #FAFAF8;
+    --color-c5recipeSectionBg: #F0EFEB;
+    --color-c5Button: #D17557;
+    --color-c5IngButton: #141413;
+}
