@@ -3,6 +3,7 @@ import challengeOneImg from "../assets/challenges/HomePage/1challengeOne.png"
 import challengeTwoImg from "../assets/challenges/HomePage/2challengeTwo.png"
 import challengeThreeImg from "../assets/challenges/HomePage/3challengeThree.png"
 import challengeFourImg from "../assets/challenges/HomePage/4challengeFour.png"
+import challengeFiveImg from '../assets/challenges/HomePage/5challengeFive.png'
 
 
 
@@ -39,6 +40,14 @@ const cardData = [
       path: "c4",
       summary: "I learned how to use the map() method to render components dynamically."
     },
+    {
+      id: "5",
+      title: "React State",
+      name: "Challenge 5 / chef claude",
+      img: challengeFiveImg,
+      path: "c5",
+      summary: "Building it rn..."
+    }
   ];
     
 
