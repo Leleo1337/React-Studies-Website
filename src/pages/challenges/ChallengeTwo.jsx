@@ -10,7 +10,7 @@ import Footer from '../../components/Footer';
 import Contacts from '../../components/challenges/Contact';
 
 export default function ChallengeTwo(){
-    document.body.classList.remove('bg-gray-900')
+    document.body.classList.remove('bg-zinc-950')
     document.body.classList.add('bg-gray-100');
 
     return(
@@ -42,7 +42,6 @@ export default function ChallengeTwo(){
                     email="pumpkin@scrimba.com"
                 />
             </div>
-            <p className="pb-12 font-semibold text-center">This page <span className="font-bold">IS</span> responsive</p>
             <Footer />
 
         </>

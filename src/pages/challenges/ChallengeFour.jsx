@@ -9,7 +9,7 @@ import journalData from '../../assets/challenges/c4/journalData.js'
 
 
 export default function ChallengeFour(){
-    document.body.classList.remove('bg-bgMain')
+    document.body.classList.remove('bg-zinc-950')
     document.body.classList.add('bg-gray-100')
 
     const Journals = journalData.map(data => {
