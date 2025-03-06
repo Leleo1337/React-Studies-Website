@@ -46,7 +46,7 @@ const cardData = [
       name: "Challenge 5 / chef claude",
       img: challengeFiveImg,
       path: "c5",
-      summary: "Building it rn..."
+      summary: "I learned how to use APIs in React, get form data, and add interactivity with useState."
     }
   ];
     

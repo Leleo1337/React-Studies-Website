@@ -12,25 +12,14 @@ export default function ChallengeFive(){
     document.body.classList.remove('bg-zinc-950')
     document.body.classList.add('bg-c5Background')
 
-    
-    const ingredients = ["Chicken", "Oregano", "Tomatoes"]
-    
+    const [ingredients, setIngredient] = useState([])
     const ingredientListItems = ingredients.map(ingredient =>{
         return <li key={ingredient}>{ingredient}</li>
     })
 
-    function handleSubmit(e){
-        e.preventDefault()
-        
-        console.log('cliquei')
-        const formData = new FormData(e.currentTarget)
+    function addIngredient(formData){
         const newIngredient = formData.get('ingredient')
-        
-        ingredients.push(newIngredient)
-
-        console.log(ingredients)
-
-        
+        setIngredient(prevState => [...prevState, newIngredient ])
     }
 
     return(
@@ -42,7 +31,7 @@ export default function ChallengeFive(){
                     </header>
                     <main className='bg-c5Main px-2 shadow-md rounded-b-md sm:px-12 pb-12'>
                         <section className='px-2 py-8'>
-                        <form onSubmit={handleSubmit} className='flex flex-col gap-2.5 justify-center items-center sm:flex-row'>
+                        <form action={addIngredient} className='flex flex-col gap-2.5 justify-center items-center sm:flex-row'>
                             <input 
                                 type="text" 
                                 placeholder='e.g oregano' 
