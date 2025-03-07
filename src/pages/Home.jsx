@@ -2,7 +2,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 
 import ChallengeCard from "../components/Cards.jsx"
-import cardData from './cardData.js'
+import cardData from '../assets/challenges/HomePage/cardData.js'
 
 import viteLogo from '../assets/vite.svg'
 import reactLogo from '../assets/reactLogo.png'

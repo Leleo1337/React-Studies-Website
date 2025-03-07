@@ -1,9 +1,9 @@
 
-import challengeOneImg from "../assets/challenges/HomePage/1challengeOne.png"
-import challengeTwoImg from "../assets/challenges/HomePage/2challengeTwo.png"
-import challengeThreeImg from "../assets/challenges/HomePage/3challengeThree.png"
-import challengeFourImg from "../assets/challenges/HomePage/4challengeFour.png"
-import challengeFiveImg from '../assets/challenges/HomePage/5challengeFive.png'
+import challengeOneImg from "./1challengeOne.png"
+import challengeTwoImg from "./2challengeTwo.png"
+import challengeThreeImg from "./3challengeThree.png"
+import challengeFourImg from "./4challengeFour.png"
+import challengeFiveImg from './5challengeFive.png'
 
 
 
