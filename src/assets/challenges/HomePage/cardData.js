@@ -4,6 +4,7 @@ import challengeTwoImg from "./2challengeTwo.png"
 import challengeThreeImg from "./3challengeThree.png"
 import challengeFourImg from "./4challengeFour.png"
 import challengeFiveImg from './5challengeFive.png'
+import challengeSixImg from './6challengeSix.png'
 
 
 
@@ -46,7 +47,15 @@ const cardData = [
       name: "Challenge 5 / chef claude",
       img: challengeFiveImg,
       path: "c5",
-      summary: "I learned how to use APIs in React, get form data, and add interactivity with useState."
+      summary: "I learned how to use APIs in React, get form data, Conditional rendering, and add interactivity with useState. (unfinished)"
+    },
+    {
+      id: "6",
+      title: "React State",
+      name: "Challenge 6 / pads",
+      img: challengeSixImg,
+      path: "c5",
+      summary: "in dev"
     }
   ];
     
