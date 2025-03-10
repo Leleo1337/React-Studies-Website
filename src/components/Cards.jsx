@@ -13,7 +13,7 @@ export default function ChallengeCard(props){
             </div>
             <div className='h-32 p-1'>
                 <h1 className='mt-2 text-center text-white font-semibold text-xl'>{props.data.title}</h1>
-                <p className='text-white break-words pt-4 ml-4 font-inter'>{props.data.summary}</p>
+                <p className='text-white break-words text-sm pt-4 ml-4 font-inter'>{props.data.summary}</p>
             </div>
         </div>
     )
