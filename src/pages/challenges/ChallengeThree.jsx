@@ -7,7 +7,7 @@ export default function ChallengeThree(){
         <>
             <Header />
             <main>
-                <div className='absolute top-1/2 left-1/2 w-[95%] sm:w-[500px] sm:h-[500px] -translate-y-1/2 -translate-x-1/2 bg-gray-50 p-4 rounded-xl shadow-md'>
+                <div className='absolute top-1/2 left-1/2 w-[95%] sm:w-[500px] sm:h-[600px] -translate-y-1/2 -translate-x-1/2 bg-gray-50 p-4 mt-20 sm:mt-0 pb-20 rounded-xl shadow-md'>
                     <Joke
                         setup="What's the best thing about Switzerland?"
                         punchline="I don't know, but the flag is a big plus!"
