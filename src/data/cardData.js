@@ -1,10 +1,10 @@
 
-import challengeOneImg from "./1challengeOne.png"
-import challengeTwoImg from "./2challengeTwo.png"
-import challengeThreeImg from "./3challengeThree.png"
-import challengeFourImg from "./4challengeFour.png"
-import challengeFiveImg from './5challengeFive.png'
-import challengeSixImg from './6challengeSix.png'
+import challengeOneImg from "../assets/challenges/HomePageCards/1challengeOne.png"
+import challengeTwoImg from "../assets/challenges/HomePageCards/2challengeTwo.png"
+import challengeThreeImg from "../assets/challenges/HomePageCards/3challengeThree.png"
+import challengeFourImg from "../assets/challenges/HomePageCards/4challengeFour.png"
+import challengeFiveImg from '../assets/challenges/HomePageCards/5challengeFive.png'
+import challengeSixImg from '../assets/challenges/HomePageCards/6challengeSix.png'
 
 
 
@@ -47,14 +47,14 @@ const cardData = [
       name: "Challenge 5 / chef claude",
       img: challengeFiveImg,
       path: "c5",
-      summary: "I learned how to use APIs in React, get form data, Conditional rendering, and add interactivity with useState. (unfinished)"
+      summary: "I learned how to use APIs in React, get forms Data, Conditional rendering, and add interactivity with useState. (unfinished)"
     },
     {
       id: "6",
       title: "React State",
       name: "Challenge 6 / pads",
       img: challengeSixImg,
-      path: "c5",
+      path: "c6",
       summary: "in dev"
     }
   ];
