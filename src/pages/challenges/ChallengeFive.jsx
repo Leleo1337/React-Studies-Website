@@ -48,6 +48,10 @@ export default function ChallengeFive(){
                                 />
                                 <button className='bg-c5IngButton w-2/3 sm:w-1/2 py-1 sm:py-2 text-white rounded-md text-sm cursor-pointer hover:bg-c5IngButton/90 active:bg-c5IngButton/100'>+ Add ingredient</button>
                             </form>
+                            {
+                            ingredients.length == 0 &&
+                                <p className='py-4 text-sm text-gray-400 font-semibold'>You must add at least 4 ingredients to get a recipe</p>
+                            }
 
                             {
                             ingredients.length > 0 &&
