@@ -2,7 +2,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 
 import ChallengeCard from "../components/Cards.jsx"
-import cardData from '../assets/challenges/HomePage/cardData.js'
+import cardData from '../data/cardData.js'
 
 import viteLogo from '../assets/vite.svg'
 import reactLogo from '../assets/reactLogo.png'
@@ -17,7 +17,7 @@ export default function Home(){
     document.body.classList.add('bg-zinc-950')
     
     const challengeCards = cardData.map(data =>{
-        return <ChallengeCard data={data}/>
+        return <ChallengeCard key={data.id} data={data}/>
     })
 
     return(
