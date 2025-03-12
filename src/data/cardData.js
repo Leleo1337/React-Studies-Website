@@ -55,7 +55,7 @@ const cardData = [
       name: "Challenge 6 / pads",
       img: challengeSixImg,
       path: "c6",
-      summary: "in dev"
+      summary: "I learned about state hierarchy, local state, and shared state."
     }
   ];
     
