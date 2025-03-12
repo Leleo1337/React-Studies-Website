@@ -1,9 +1,9 @@
-import { use, useState } from 'react'
+import { useState } from 'react'
+
+import getRecipeFromMistral from '../../ai.js'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-
-
 import ContainerHeader from '../../components/challenges/c5/ContainerHeader'
 import ClaudeRecipe from '../../components/challenges/c5/ClaudeRecipe'
 import IngredientList from '../../components/challenges/c5/IngredientList'
@@ -13,8 +13,8 @@ export default function ChallengeFive(){
     document.body.classList.remove('bg-zinc-950')
     document.body.classList.add('bg-c5Background')
 
-    const [ ingredients, setIngredient] = useState(['a', 'b', 'c', 'd'])
-    const [ recipeShown, setRecipeShown ] = useState(false)
+    const [ ingredients, setIngredient] = useState([])
+    const [ recipe, setRecipe ] = useState("")
 
     const ingredientListItems = ingredients.map(ingredient =>{
         return <li key={ingredient}>{ingredient}</li>
@@ -31,6 +31,11 @@ export default function ChallengeFive(){
             return
         } 
         setIngredient(prevState => [...prevState, newIngredient ])
+    }
+
+    async function getRecipe(ingredientList){
+        const recipeResponse = await getRecipeFromMistral(ingredientList)
+        setRecipe(recipeResponse)
     }
 
     
@@ -55,10 +60,10 @@ export default function ChallengeFive(){
                             </form>
                             { ingredients.length == 0 && <p className='py-4 text-sm text-gray-400 font-semibold'>You must add at least 4 ingredients to get a recipe</p> }
                             
-                            {ingredients.length > 0 && <IngredientList listItems={ingredientListItems} toggleRecipe={() => setRecipeShown(true)} />}
+                            {ingredients.length > 0 && <IngredientList listItems={ingredientListItems} getRecipe={() => getRecipe(ingredients)} />}
 
                         </section>
-                        {recipeShown && <ClaudeRecipe />}
+                        {recipe && <ClaudeRecipe prompt={recipe} />}
                     </main>
                 </div>
             <Footer />

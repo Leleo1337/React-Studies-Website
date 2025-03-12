@@ -1,0 +1,55 @@
+.get-recipe-container {
+    font-family: 'Inter';
+    padding: 2rem 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.get-recipe-container p {
+    color: #6B7280; /* text-gray-600 */
+    font-size: 1rem; /* text-xl */
+    font-weight: 350; /* font-semibold */
+    padding-top: 5px; 
+    padding-bottom: 10px; 
+}
+
+.get-recipe-container p:nth-last-child(2) {
+    color: #6B7280; /* text-gray-600 */
+    font-size: .95rem; /* text-xl */
+    font-weight: 300; /* font-semibold */
+    padding-top: 5px; 
+}
+
+.get-recipe-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.get-recipe-container .ingredients,
+.get-recipe-container .instructions {
+    padding-top: 3rem; /* py-12 */
+}
+
+.get-recipe-container ul, 
+.get-recipe-container ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* gap-2 */
+    padding-left: 1.5rem; /* pl-6 */
+    color: #6B7280; /* text-gray-500 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.get-recipe-container ul {
+    list-style-type: disc;
+}
+
+.get-recipe-container ol {
+    list-style-type: decimal;
+}
+
+.get-recipe-container .enjoy-text {
+    color: #6B7280; /* text-gray-600 */
+    padding: 0.5rem;
+    padding-top: 3rem; /* pt-12 */
+    font-size: 0.875rem; /* text-sm */
+}
