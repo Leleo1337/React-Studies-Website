@@ -9,7 +9,7 @@ export default function Pad(props){
                 opacity: props.isOn ? 1 : 0.1,
             }} 
         >
-            I am a Pad 
+            Click me
         </button>
     )
 }
