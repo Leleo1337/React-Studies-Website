@@ -4,6 +4,13 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.get-recipe-container > h2,h3,h4,h5,h6 {
+    color: #6B7280; /* text-gray-600 */
+    font-size: 1.2rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    padding-top: 5px; 
+}
+
 .get-recipe-container p {
     color: #6B7280; /* text-gray-600 */
     font-size: 1rem; /* text-xl */
@@ -15,8 +22,8 @@
 .get-recipe-container p:nth-last-child(2) {
     color: #6B7280; /* text-gray-600 */
     font-size: .95rem; /* text-xl */
-    font-weight: 300; /* font-semibold */
-    padding-top: 5px; 
+    font-weight: 350; /* font-semibold */
+    padding-top: 40px; 
 }
 
 .get-recipe-container{
@@ -28,6 +35,10 @@
 .get-recipe-container .instructions {
     padding-top: 3rem; /* py-12 */
 }
+.get-recipe-container ul:first-of-type, ol:first-of-type {
+    padding-bottom: 15px;
+}
+
 
 .get-recipe-container ul, 
 .get-recipe-container ol {
