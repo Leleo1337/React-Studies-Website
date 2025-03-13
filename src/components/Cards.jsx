@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom'; // navegação SPA
-import { useState } from 'react';
 
 export default function ChallengeCard(props){
-    const [ isHovered, setIsHovered ] = useState(false)
-
     return(
         <div className='items-center w-full h-70 md:h-75 bg-gradient-to-br from-white/60 via-gray-700/40 to-black/20 rounded-md shadow mb-4'>
             <div className='w-full h-35 md:h-43 md:hover:h-48 overflow-hidden rounded-t-sm bg-left-top transition-all ease-in duration-200' >
