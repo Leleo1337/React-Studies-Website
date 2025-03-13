@@ -1,6 +1,6 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Pad from '../../components/challenges/Pad'
+import Pad from '../../components/challenges/c6/Pad'
 
 import padsData from '../../data/padsData'
 import { useState } from 'react'

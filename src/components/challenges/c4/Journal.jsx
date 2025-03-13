@@ -1,4 +1,4 @@
-import markerIcon from '../../assets/challenges/c4/marker.png' 
+import markerIcon from '../../../assets/challenges/c4/marker.png' 
 
 export default function Component(props){
     return(

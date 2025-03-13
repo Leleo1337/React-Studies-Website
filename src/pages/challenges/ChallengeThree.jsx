@@ -1,6 +1,6 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Joke from '../../components/challenges/Joke'
+import Joke from '../../components/challenges/c3/Joke'
 
 export default function ChallengeThree(){
     return(

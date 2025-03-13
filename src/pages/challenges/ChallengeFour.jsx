@@ -2,9 +2,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 import globeIcon from '../../assets/challenges/c4/globe.png' 
-import Component from '../../components/challenges/Journal'
-
-
+import JournalComponent from '../../components/challenges/c4/Journal'
 import journalData from '../../assets/challenges/c4/journalData.js'
 
 
@@ -13,7 +11,7 @@ export default function ChallengeFour(){
     document.body.classList.add('bg-gray-100')
 
     const Journals = journalData.map(data => {
-        return <Component
+        return <JournalComponent
          key={data.id}
          contentData={data}
          />
