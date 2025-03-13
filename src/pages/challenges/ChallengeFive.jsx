@@ -15,6 +15,7 @@ export default function ChallengeFive(){
 
     const [ ingredients, setIngredient] = useState([])
     const [ recipe, setRecipe ] = useState("")
+    const [ loading, setLoading ] = useState(false)
 
     const ingredientListItems = ingredients.map(ingredient =>{
         return <li key={ingredient}>{ingredient}</li>
@@ -34,8 +35,12 @@ export default function ChallengeFive(){
     }
 
     async function getRecipe(ingredientList){
+        setLoading(true)
         const recipeResponse = await getRecipeFromMistral(ingredientList)
-        setRecipe(recipeResponse)
+        if(recipeResponse){
+            setRecipe(recipeResponse)
+            setLoading(false)
+        }
     }
 
     
@@ -60,10 +65,10 @@ export default function ChallengeFive(){
                             </form>
                             { ingredients.length == 0 && <p className='py-4 text-sm text-gray-400 font-semibold'>You must add at least 4 ingredients to get a recipe</p> }
                             
-                            {ingredients.length > 0 && <IngredientList listItems={ingredientListItems} getRecipe={() => getRecipe(ingredients)} />}
+                            {ingredients.length > 0 && <IngredientList listItems={ingredientListItems} spin={loading} getRecipe={() => getRecipe(ingredients)} />}
 
                         </section>
-                        {recipe && <ClaudeRecipe prompt={recipe} />}
+                        {recipe && <ClaudeRecipe recipeIdea={recipe} />}
                     </main>
                 </div>
             <Footer />

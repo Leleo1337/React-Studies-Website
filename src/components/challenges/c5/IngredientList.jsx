@@ -11,7 +11,7 @@ export default function IngredientList(props){
                 </ul>
                 {
                 props.listItems.length > 3 && 
-                    <RecipeCard getRecipe={props.getRecipe}/>
+                    <RecipeCard spin={props.spin} getRecipe={props.getRecipe}/>
                 } 
             </div>
         </>
