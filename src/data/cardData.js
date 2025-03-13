@@ -5,6 +5,8 @@ import challengeThreeImg from "../assets/challenges/HomePageCards/3challengeThre
 import challengeFourImg from "../assets/challenges/HomePageCards/4challengeFour.png"
 import challengeFiveImg from '../assets/challenges/HomePageCards/5challengeFive.png'
 import challengeSixImg from '../assets/challenges/HomePageCards/6challengeSix.png'
+import challengeSevenImg from '../assets/challenges/HomePageCards/7challengeSeven.png'
+
 
 
 
@@ -47,7 +49,7 @@ const cardData = [
       name: "Challenge 5 / chef claude",
       img: challengeFiveImg,
       path: "c5",
-      summary: "I learned how to use APIs in React, get forms Data, Conditional rendering, and add interactivity with useState. (unfinished)"
+      summary: "I learned Event listeners, State, conditional rendering, Forms and State management strategies"
     },
     {
       id: "6",
@@ -56,6 +58,14 @@ const cardData = [
       img: challengeSixImg,
       path: "c6",
       summary: "I learned about state hierarchy, local state, and shared state."
+    },
+    {
+      id: "7",
+      title: "Side Effects",
+      name: "Challenge 7 / Meme generator",
+      img: challengeSevenImg,
+      path: "c7",
+      summary: "Doing it rn"
     }
   ];
     
