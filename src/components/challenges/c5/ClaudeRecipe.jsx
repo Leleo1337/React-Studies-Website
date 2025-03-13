@@ -6,7 +6,9 @@ export default function RecipeOutPut(props){
         <>
             <section className='get-recipe-container py-4 px-2 shadow-sm'>
                     <h2 className='text-xl font-semibold'>Cheff Claude Recommends: </h2>
-                    <ReactMarkdown>{props.prompt}</ReactMarkdown>
+                    <ReactMarkdown>
+                        {props.recipeIdea}
+                    </ReactMarkdown>
                     <p className='enjoy-text '>Enjoy!</p>
             </section>
         </>
