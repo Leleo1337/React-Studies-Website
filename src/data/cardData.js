@@ -22,7 +22,7 @@ const cardData = [
     {
       id: "2",
       title: "Data driven React",
-      name: "Challenge 2 / ReactFacts",
+      name: "Challenge 2 / Cats",
       img: challengeTwoImg,
       path: "c2",
       summary: "I learned how to create components and use data with them."
