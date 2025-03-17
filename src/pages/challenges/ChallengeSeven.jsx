@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
@@ -13,6 +13,8 @@ export default function ChallengeSeven(){
         imgURL: memeImg
     })
 
+    const [ memeArr, setMemeArr ] = useState([])
+
     function changeText(e){
         const { value, name } = e.target
         
@@ -24,37 +26,17 @@ export default function ChallengeSeven(){
         })
     }
 
-    async function generateImage(){
-        const api = "https://api.imgflip.com/get_memes"
 
-        try{
-            const apiResponse = await fetch(api)
-            if(apiResponse.ok){
-                const randomNumber = Math.floor(Math.random() * 101)
-
-                const data = await apiResponse.json()
-                const memeImg = data.data.memes[randomNumber].url
-                console.log(data)
-
-                setMeme(prev => {
-                    return {
-                        ...prev,
-                        imgURL: memeImg,
-                    }
-                })
-
-            }else{
-                console.log('api de merda')
-            }
-        }catch(e){
-            console.log('deu erro zé ', e)
-        }
-    }
-
-    
     function handleSubmit(e){
         e.preventDefault()
     }
+
+    useEffect(() => {
+        const imgApi = "https://api.imgflip.com/get_memes"
+        fetch(imgApi)
+            .then(response => response.json())
+            .then(data => setMemeArr(data.data.memes))
+    }, [])
 
     return(
         <>
@@ -88,7 +70,7 @@ export default function ChallengeSeven(){
                                     />
                                 </div>
                             </div>
-                            <button onClick={generateImage} 
+                            <button onClick={() => console.log(memeArr)} 
                                 className='py-2 px-6 mt-4 w-full bg-purple-800 text-white active:bg-purple-900 rounded-md cursor-pointer'>
                                 Get a new meme image  🖼
                             </button>
