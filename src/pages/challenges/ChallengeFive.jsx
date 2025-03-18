@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import getRecipeFromMistral from '../../ai.js'
 
@@ -10,13 +10,10 @@ import IngredientList from '../../components/challenges/c5/IngredientList'
 
 
 export default function ChallengeFive(){
-    document.body.classList.remove('bg-zinc-950')
-    document.body.classList.add('bg-c5Background')
-
-    const [ ingredients, setIngredient] = useState([])
+    const [ ingredients, setIngredient] = useState(['a','b','c'])
     const [ recipe, setRecipe ] = useState("")
     const [ loading, setLoading ] = useState(false)
-
+    const recipeSection = useRef(null)
     const ingredientListItems = ingredients.map(ingredient =>{
         return <li key={ingredient}>{ingredient}</li>
     })
@@ -33,7 +30,6 @@ export default function ChallengeFive(){
         } 
         setIngredient(prevState => [...prevState, newIngredient ])
     }
-
     async function getRecipe(ingredientList){
         setLoading(true)
         const recipeResponse = await getRecipeFromMistral(ingredientList)
@@ -43,6 +39,19 @@ export default function ChallengeFive(){
         }
     }
 
+    useEffect(() => {
+        document.body.classList.add('bg-c5Background');
+
+        return () => {
+            document.body.classList.remove('bg-c5Background');
+        };
+    }, []);
+
+    useEffect(() =>{
+        if (recipe !== "" && recipeSection.current !== null){
+            recipeSection.current.scrollIntoView({ behavior: 'smooth'});
+        }
+    },[recipe])
     
     return(
         <>
@@ -60,12 +69,13 @@ export default function ChallengeFive(){
                                     aria-label="add ingredient"
                                     name="ingredient"
                                     className='border w-full py-1 sm:py-2 border-gray-300 rounded-sm text-sm text-center shadow-xs'
+                                    autoComplete='off'
                                 />
                                 <button className='bg-c5IngButton w-2/3 sm:w-1/2 py-1 sm:py-2 text-white rounded-md text-sm cursor-pointer hover:bg-c5IngButton/90 active:bg-c5IngButton/100'>+ Add ingredient</button>
                             </form>
                             { ingredients.length == 0 && <p className='py-4 text-sm text-gray-400 font-semibold'>You must add at least 4 ingredients to get a recipe</p> }
                             
-                            {ingredients.length > 0 && <IngredientList listItems={ingredientListItems} spin={loading} getRecipe={() => getRecipe(ingredients)} />}
+                            {ingredients.length > 0 && <IngredientList ref={recipeSection} listItems={ingredientListItems} spin={loading} getRecipe={() => getRecipe(ingredients)} />}
 
                         </section>
                         {recipe && <ClaudeRecipe recipeIdea={recipe} />}
