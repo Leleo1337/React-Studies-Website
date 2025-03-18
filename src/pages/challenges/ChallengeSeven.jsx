@@ -13,7 +13,7 @@ export default function ChallengeSeven(){
         imgURL: memeImg
     })
 
-    const [ memeArr, setMemeArr ] = useState([])
+    const [ memeImagesArr, setMemeImagesArr ] = useState([])
 
     function changeText(e){
         const { value, name } = e.target
@@ -26,30 +26,39 @@ export default function ChallengeSeven(){
         })
     }
 
+    function getRandomMemeImage(){
+        const randomIndex = Math.round(Math.random() * 101)
+        const randomMemeImage = memeImagesArr[randomIndex].url
 
-    function handleSubmit(e){
-        e.preventDefault()
+        setMeme(prev => {
+            return {
+                ...prev,
+                imgURL: randomMemeImage
+            }
+        })
     }
+
+
 
     useEffect(() => {
         const imgApi = "https://api.imgflip.com/get_memes"
         fetch(imgApi)
             .then(response => response.json())
-            .then(data => setMemeArr(data.data.memes))
+            .then(data => setMemeImagesArr(data.data.memes))
     }, [])
 
     return(
         <>
             <Header />
-                <div className='absolute top-1/2 left-1/2 -translate-1/2 w-full max-w-[700px]'>
+                <div className='mx-auto pt-12 w-full max-w-[700px]'>
                     <header className='bg-purple-900 px-8 py-4 rounded-t-md'>
                         <div className='flex items-center gap-4'>
                             <img src={trollFaceImg} alt="Troll face" className='w-11' />
                             <h1 className='text-white text-xl font-semibold'>Meme Generator</h1>
                         </div>
                     </header>
-                    <main className='bg-white p-4 sm:py-6 sm:px-12 py-8 rounded-b-md'>
-                        <form onSubmit={handleSubmit}>
+                    <main className='bg-white p-4 sm:py-6 sm:px-12  py-8 rounded-b-md'>
+                        <form onSubmit={(e) => e.preventDefault()}>
                             <div className='flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-16'>
                                 <div className='flex flex-col sm:w-1/2'>
                                     <label htmlFor="top" className='text-gray-600 font-semibold pb-1'>Top text</label>
@@ -70,17 +79,15 @@ export default function ChallengeSeven(){
                                     />
                                 </div>
                             </div>
-                            <button onClick={() => console.log(memeArr)} 
-                                className='py-2 px-6 mt-4 w-full bg-purple-800 text-white active:bg-purple-900 rounded-md cursor-pointer'>
+                            <button onClick={getRandomMemeImage} 
+                                className='w-full py-2 px-6 mt-4  bg-purple-800 text-white active:bg-purple-900 rounded-md cursor-pointer'>
                                 Get a new meme image  🖼
                             </button>
                         </form>
-                        <div className='w-full mt-6 rounded-md shadow-xl bg-black'>
-                            <div className='relative'>
-                                <img src={meme.imgURL} alt="Random generated meme image" className='opacity-95x rounded-sm max-h-[500px] w-full'/>   
-                                <span className='w-full absolute top-0 px-4 py-4 text-center text-white font-meme meme-Text-Shadow text-lg sm:text-3xl'>{meme.topText}</span>
-                                <span className='w-full absolute bottom-0 px-4 py-3 text-center text-white font-meme meme-Text-Shadow text-lg sm:text-3xl'>{meme.bottomText}</span>
-                            </div>
+                        <div className='relative w-full h-[330px] mt-6 rounded-md shadow-xl bg-black'>
+                            <img src={meme.imgURL} alt="Random generated meme image" className=' w-full h-[330px] opacity-95x rounded-sm'/>   
+                            <span className='absolute top-0 w-full px-4 py-4 text-center text-white font-meme meme-Text-Shadow text-lg sm:text-3xl'>{meme.topText}</span>
+                            <span className='absolute bottom-0 w-full px-4 py-3 text-center text-white font-meme meme-Text-Shadow text-lg sm:text-3xl'>{meme.bottomText}</span>
                         </div>
                     </main>
                 </div>
