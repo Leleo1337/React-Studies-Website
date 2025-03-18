@@ -8,10 +8,17 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 
 import Contacts from '../../components/challenges/c2/Contact';
+import { useEffect } from 'react'
 
 export default function ChallengeTwo(){
-    document.body.classList.remove('bg-zinc-950')
-    document.body.classList.add('bg-gray-100');
+    
+    useEffect(() => {
+        document.body.classList.add('bg-gray-100')
+
+        return () => {
+            document.body.classList.remove('bg-gray-100')
+        }
+    }, [])
 
     return(
         <> 

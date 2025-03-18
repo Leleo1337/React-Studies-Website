@@ -1,8 +1,17 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Joke from '../../components/challenges/c3/Joke'
+import { useEffect } from 'react'
 
 export default function ChallengeThree(){
+    useEffect(() => {
+        document.body.classList.add('bg-gray-100');
+
+        return () => {
+            document.body.classList.remove('bg-gray-100');
+        };
+    }, []);
+
     return(
         <>
             <Header />

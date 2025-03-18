@@ -4,18 +4,23 @@ import Footer from '../../components/Footer'
 import globeIcon from '../../assets/challenges/c4/globe.png' 
 import JournalComponent from '../../components/challenges/c4/Journal'
 import journalData from '../../assets/challenges/c4/journalData.js'
+import { useEffect } from 'react'
 
 
 export default function ChallengeFour(){
-    document.body.classList.remove('bg-zinc-950')
-    document.body.classList.add('bg-gray-100')
-
     const Journals = journalData.map(data => {
         return <JournalComponent
          key={data.id}
          contentData={data}
          />
     })
+    useEffect(() => {
+        document.body.classList.add('bg-gray-100')
+
+        return () => {
+            document.body.classList.remove('bg-gray-100')
+        }
+    }, [])
 
     return(
         <>

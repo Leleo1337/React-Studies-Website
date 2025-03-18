@@ -9,17 +9,22 @@ import reactLogo from '../assets/reactLogo.png'
 import tailwindLogo from '../assets/tailwindLogo.png'
 
 import BgImages from '../components/bgImages.jsx'
+import { useEffect } from 'react';
 
-export default function Home(){
-    // gambiarra :p
-    
-    document.body.classList.remove('bg-gray-100')
-    document.body.classList.add('bg-zinc-950')
-    
+export default function Home(){    
     const challengeCards = cardData.map(data =>{
         return <ChallengeCard key={data.id} data={data}/>
     })
+    
+    
+    useEffect(() => {
+        document.body.classList.add('bg-zing-950');
 
+        return () => {
+            document.body.classList.remove('bg-zing-950');
+        };
+    }, []);
+    
     return(
         <>
             <Header />
