@@ -70,3 +70,7 @@
 @theme challengeSeven{
     --font-meme: 'Impact', 'Arial'
 }
+
+@theme challengeEight{
+    --color-c8Background: #0b2434;
+}

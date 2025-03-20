@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
-import trollFaceImg from '../../assets/challenges/c7/trollFace.png'
 import memeImg from '../../assets/challenges/c7/memeImg.png'
+
+import Button from '../../components/challenges/c7/Button';
+import ChallengeHeader from '../../components/challenges/c7/ChallengeHeader'
 
 export default function ChallengeSeven(){
 
@@ -27,8 +29,8 @@ export default function ChallengeSeven(){
     }
 
     function getRandomMemeImage(){
-        const randomIndex = Math.round(Math.random() * 101)
-        const randomMemeImage = memeImagesArr[randomIndex].url
+        const randomIndex = Math.round(Math.random() * memeImagesArr.length)
+        const randomMemeImage = memeImagesArr[randomIndex].url || memeImg
 
         setMeme(prev => {
             return {
@@ -37,8 +39,6 @@ export default function ChallengeSeven(){
             }
         })
     }
-
-
 
     useEffect(() => {
         const imgApi = "https://api.imgflip.com/get_memes"
@@ -51,12 +51,7 @@ export default function ChallengeSeven(){
         <>
             <Header />
                 <div className='mx-auto pt-12 w-full max-w-[700px]'>
-                    <header className='bg-purple-900 px-8 py-4 rounded-t-md'>
-                        <div className='flex items-center gap-4'>
-                            <img src={trollFaceImg} alt="Troll face" className='w-11' />
-                            <h1 className='text-white text-xl font-semibold'>Meme Generator</h1>
-                        </div>
-                    </header>
+                    <ChallengeHeader />
                     <main className='bg-white p-4 sm:py-6 sm:px-12  py-8 rounded-b-md'>
                         <form onSubmit={(e) => e.preventDefault()}>
                             <div className='flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-16'>
@@ -79,10 +74,7 @@ export default function ChallengeSeven(){
                                     />
                                 </div>
                             </div>
-                            <button onClick={getRandomMemeImage} 
-                                className='w-full py-2 px-6 mt-4  bg-purple-800 text-white active:bg-purple-900 rounded-md cursor-pointer'>
-                                Get a new meme image  🖼
-                            </button>
+                            <Button click={getRandomMemeImage} />
                         </form>
                         <div className='relative w-full h-[330px] mt-6 rounded-md shadow-xl bg-black'>
                             <img src={meme.imgURL} alt="Random generated meme image" className=' w-full h-[330px] opacity-95x rounded-sm'/>   

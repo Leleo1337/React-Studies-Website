@@ -6,7 +6,7 @@ import challengeFourImg from "../assets/challenges/HomePageCards/4challengeFour.
 import challengeFiveImg from '../assets/challenges/HomePageCards/5challengeFive.png'
 import challengeSixImg from '../assets/challenges/HomePageCards/6challengeSix.png'
 import challengeSevenImg from '../assets/challenges/HomePageCards/7challengeSeven.png'
-
+import challengeEightImg from '../assets/challenges/HomePageCards/8challengeEight.png'
 
 
 
@@ -49,7 +49,7 @@ const cardData = [
       name: "Challenge 5 / chef claude",
       img: challengeFiveImg,
       path: "c5",
-      summary: "I learned Event listeners, State, conditional rendering, Forms and State management strategies"
+      summary: "I learned Event listeners, State, conditional rendering, Forms and State management strategies."
     },
     {
       id: "6",
@@ -65,7 +65,15 @@ const cardData = [
       name: "Challenge 7 / Meme generator",
       img: challengeSevenImg,
       path: "c7",
-      summary: "Doing it rn"
+      summary: "Learned about the useEffect hook, how to use it, and how to fetch data during window load with it."
+    },
+    {
+      id: "8",
+      title: "project 1",
+      name: "Challenge 8 / Tenzies",
+      img: challengeEightImg,
+      path: "c8",
+      summary: "(In dev)"
     }
   ];
     

@@ -12,6 +12,7 @@ import ChallengeFour from './pages/challenges/ChallengeFour.jsx';
 import ChallengeFive from './pages/challenges/ChallengeFive.jsx';
 import ChallengeSix from './pages/challenges/ChallengeSix.jsx';
 import ChallengeSeven from './pages/challenges/ChallengeSeven.jsx';
+import ChallengeEight from './pages/challenges/ChallengeEight.jsx';
 
 
 const root = createRoot(document.querySelector('#root'))
@@ -28,6 +29,7 @@ root.render(
             <Route path="/c5" element={<ChallengeFive />} />
             <Route path="/c6" element={<ChallengeSix />} />
             <Route path="/c7" element={<ChallengeSeven />} />
+            <Route path="/c8" element={<ChallengeEight />} />
         </Routes>
     </BrowserRouter>
   </StrictMode>,
