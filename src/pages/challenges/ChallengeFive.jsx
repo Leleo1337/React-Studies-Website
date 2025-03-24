@@ -10,7 +10,7 @@ import IngredientList from '../../components/challenges/c5/IngredientList'
 
 
 export default function ChallengeFive(){
-    const [ ingredients, setIngredient] = useState(['a','b','c'])
+    const [ ingredients, setIngredient] = useState([])
     const [ recipe, setRecipe ] = useState("")
     const [ loading, setLoading ] = useState(false)
     const recipeSection = useRef(null)
