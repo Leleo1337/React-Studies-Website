@@ -73,7 +73,7 @@ const cardData = [
       name: "Challenge 8 / Tenzies",
       img: challengeEightImg,
       path: "c8",
-      summary: "(In dev)"
+      summary: "Tenzie exercise, using useState, useEffect and React confetti"
     }
   ];
     
