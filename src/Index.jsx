@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './ScrollToTop.js';
+import ScrollToTop from './utils/ScrollToTop.js';
 import './index.css' // tailwind css
 
 import Home from './pages/Home.jsx';
@@ -13,7 +13,7 @@ import ChallengeFive from './pages/challenges/ChallengeFive.jsx';
 import ChallengeSix from './pages/challenges/ChallengeSix.jsx';
 import ChallengeSeven from './pages/challenges/ChallengeSeven.jsx';
 import ChallengeEight from './pages/challenges/ChallengeEight.jsx';
-
+import ChallengeNine from './pages/challenges/ChallengeNine.jsx';
 
 const root = createRoot(document.querySelector('#root'))
 root.render(
@@ -30,6 +30,7 @@ root.render(
             <Route path="/c6" element={<ChallengeSix />} />
             <Route path="/c7" element={<ChallengeSeven />} />
             <Route path="/c8" element={<ChallengeEight />} />
+            <Route path="/c9" element={<ChallengeNine />} />
         </Routes>
     </BrowserRouter>
   </StrictMode>,

@@ -7,8 +7,7 @@ import challengeFiveImg from '../assets/challenges/HomePageCards/5challengeFive.
 import challengeSixImg from '../assets/challenges/HomePageCards/6challengeSix.png'
 import challengeSevenImg from '../assets/challenges/HomePageCards/7challengeSeven.png'
 import challengeEightImg from '../assets/challenges/HomePageCards/8challengeEight.png'
-
-
+import challengeNineImg from '../assets/challenges/HomePageCards/9challengeNine.png'
 
 const cardData = [
     {
@@ -73,6 +72,14 @@ const cardData = [
       name: "Challenge 8 / Tenzies",
       img: challengeEightImg,
       path: "c8",
+      summary: "Tenzie exercise, using useState, useEffect and React confetti"
+    },
+    {
+      id: "9",
+      title: "project 1",
+      name: "Challenge 8 / Tenzies",
+      img: challengeNineImg,
+      path: "c9",
       summary: "Tenzie exercise, using useState, useEffect and React confetti"
     }
   ];
