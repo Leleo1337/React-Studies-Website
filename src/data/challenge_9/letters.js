@@ -1,8 +1,28 @@
-import { nanoid } from "nanoid";
-
-export const letters = [
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-].map(letter => ({
-    key: nanoid(),
-    letter: letter
-}));
+export const lettersObj = [
+    { id: "1", key: "1", letter: 'A', status: 'unused' },
+    { id: "2", key: "2", letter: 'B', status: 'unused' },
+    { id: "3", key: "3", letter: 'C', status: 'unused' },
+    { id: "4", key: "4", letter: 'D', status: 'unused' },
+    { id: "5", key: "5", letter: 'E', status: 'unused' },
+    { id: "6", key: "6", letter: 'F', status: 'unused' },
+    { id: "7", key: "7", letter: 'G', status: 'unused' },
+    { id: "8", key: "8", letter: 'H', status: 'unused' },
+    { id: "9", key: "9", letter: 'I', status: 'unused' },
+    { id: "10", key: "10", letter: 'J', status: 'unused' },
+    { id: "11", key: "11", letter: 'K', status: 'unused' },
+    { id: "12", key: "12", letter: 'L', status: 'unused' },
+    { id: "13", key: "13", letter: 'M', status: 'unused' },
+    { id: "14", key: "14", letter: 'N', status: 'unused' },
+    { id: "15", key: "15", letter: 'O', status: 'unused' },
+    { id: "16", key: "16", letter: 'P', status: 'unused' },
+    { id: "17", key: "17", letter: 'Q', status: 'unused' },
+    { id: "18", key: "18", letter: 'R', status: 'unused' },
+    { id: "19", key: "19", letter: 'S', status: 'unused' },
+    { id: "20", key: "20", letter: 'T', status: 'unused' },
+    { id: "21", key: "21", letter: 'U', status: 'unused' },
+    { id: "22", key: "22", letter: 'V', status: 'unused' },
+    { id: "23", key: "23", letter: 'W', status: 'unused' },
+    { id: "24", key: "24", letter: 'X', status: 'unused' },
+    { id: "25", key: "25", letter: 'Y', status: 'unused' },
+    { id: "26", key: "26", letter: 'Z', status: 'unused' }
+];

@@ -17,7 +17,6 @@ import ChallengeNine from './pages/challenges/ChallengeNine.jsx';
 
 const root = createRoot(document.querySelector('#root'))
 root.render(
-  <StrictMode>
     <BrowserRouter basename='/reactjs/'>
       <ScrollToTop />
         <Routes>
@@ -33,5 +32,4 @@ root.render(
             <Route path="/c9" element={<ChallengeNine />} />
         </Routes>
     </BrowserRouter>
-  </StrictMode>,
 )
