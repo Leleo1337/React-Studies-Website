@@ -42,7 +42,7 @@ export default function Home(){
                         <p className="text-white text-center">I'm building this website to learn react and enhance my skills in Tailwind CSS, HTML and JavaScript, following the <span className="text-blue-300 hover:text-blue-500 underline"><a href="https://scrimba.com/learn-react-c0e" target="_blank">"Learn React" course on Scrimba</a> </span>, this website is made to apply what I've learned in the lessons.</p>
                     </div>
                 </section>
-                <section className="relative w-full px-2 pt-4 pb-20 m-auto bg-zinc-950">
+                <section className="relative w-full px-2 pt-4 pb-0 m-auto bg-zinc-950">
                     <h1 className="py-8 text-3xl font-bold text-center text-white">Course Exercises / Challenges</h1>
                     <div className="pb-8 border-b border-gray-900">
                         <div className="flex flex-col gap-4 px-4 sm:grid sm:grid-rows-1 sm:grid-cols-2 sm:justify-items-center lg:grid-cols-3 lg:justify-items-center">
@@ -50,6 +50,10 @@ export default function Home(){
                         </div>
                     </div>
                 </section>
+                <div className='flex flex-col justify-center gap-2 text-center h-60 text-white pb-8'>
+                    <h1 className='text-3xl'>Finished course on 31/03/2025</h1>
+                    <p>Thanks to bob ziroll and Scrimba for the Excellent free course</p>
+                </div>
             </main>
             <Footer />
         </>

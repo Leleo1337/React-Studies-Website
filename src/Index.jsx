@@ -17,7 +17,7 @@ import ChallengeNine from './pages/challenges/ChallengeNine.jsx';
 
 const root = createRoot(document.querySelector('#root'))
 root.render(
-    <BrowserRouter basename='/reactjs/'>
+    <BrowserRouter basename='/React-Studies-Website/'>
       <ScrollToTop />
         <Routes>
             <Route path="/" element={<Home />} />

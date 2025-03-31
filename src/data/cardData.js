@@ -72,15 +72,15 @@ const cardData = [
       name: "Challenge 8 / Tenzies",
       img: challengeEightImg,
       path: "c8",
-      summary: "Tenzie exercise, using useState, useEffect and React confetti"
+      summary: "Tenzie game"
     },
     {
       id: "9",
-      title: "project 1",
-      name: "Challenge 8 / Tenzies",
+      title: "project 2",
+      name: "Challenge 8 / Assembly End-Game",
       img: challengeNineImg,
       path: "c9",
-      summary: "Tenzie exercise, using useState, useEffect and React confetti"
+      summary: "Assembly game"
     }
   ];
     

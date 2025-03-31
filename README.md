@@ -12,7 +12,7 @@ I am corruently following the ["Learn react"](https://scrimba.com/learn-react-c0
 ![image](https://github.com/user-attachments/assets/f0318953-839c-4b94-a010-dbeffe56cb27)
 ![image](https://github.com/user-attachments/assets/31c7c45c-748a-48bb-b88a-c0025abde388)
 
-[You can Acess it here](https://leleo1337.github.io/reactjs/)
+[You can Acess it here](https://leleo1337.github.io/React-Studies-Website/)
 <br>
 
 i've used ChatGPT to set up React router since this course dont include it
