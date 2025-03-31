@@ -10,7 +10,7 @@ I am corruently following the ["Learn react"](https://scrimba.com/learn-react-c0
 - Tailwind CSS
 
 ![image](https://github.com/user-attachments/assets/f0318953-839c-4b94-a010-dbeffe56cb27)
-![image](https://github.com/user-attachments/assets/31c7c45c-748a-48bb-b88a-c0025abde388)
+![image](https://github.com/user-attachments/assets/5dad37b8-6da7-40e7-bbc2-dd7fbb5855aa)
 
 [You can Acess it here](https://leleo1337.github.io/React-Studies-Website/)
 <br>
