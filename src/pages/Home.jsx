@@ -32,7 +32,7 @@ export default function Home(){
                 <section className='flex flex-col items-center justify-center flex-nowrap shrink h-[78vh] px-4 pt-8 pb-8 bg-black opacity-99'>
                     <BgImages />
                     <div className='z-50'>
-                        <img src="https://avatars.githubusercontent.com/u/168025120?v=4" alt="Leleo1337 github image" className='mx-auto rounded-full w-40 mb-8' />
+                        <img src="https://avatars.githubusercontent.com/u/168025120?v=4" alt="Leleo1337 github image" className='mx-auto rounded-full w-40 mb-8 outline-2 outline-white/30' />
                         <div className="flex items-center justify-center gap-3">
                             <img className="w-10" src={viteLogo} alt="TailWindCSS Logo" />
                             <img className='w-12'src={reactLogo} alt="React Logo" />
